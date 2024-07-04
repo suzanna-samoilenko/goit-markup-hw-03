@@ -32,7 +32,7 @@ button {
 
 .container {
   max-width: 1158px;
-  padding: 0 15 px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 .page-header {
@@ -140,6 +140,7 @@ button {
   margin: 0 auto;
   display: block;
   border: none;
+  min-width: 169px;
 }
 
 .button:hover,
@@ -205,7 +206,7 @@ button {
 
 .list-team {
   display: flex;
-  gap: 24px 48px;
+  gap: 24px;
 }
 
 .subtitle-team {
@@ -220,8 +221,11 @@ button {
 }
 
 .item-team {
-  background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .img {
@@ -232,9 +236,6 @@ button {
 
 .card-team {
   padding: 32px 16px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
 }
 
 .content-team {
@@ -255,15 +256,15 @@ button {
 }
 
 .item-portfolio {
-  width: calc((100% - 2 * 24px) / 3);
+  width: calc((100% - 48px) / 3);
   width: 360px;
-  border: 1px solid #e7e9fc;
 }
 
 .card-portfolio {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .subtitle-portfolio {
@@ -284,10 +285,13 @@ button {
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 0 100px;
 }
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .content-footer {
@@ -296,5 +300,4 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
