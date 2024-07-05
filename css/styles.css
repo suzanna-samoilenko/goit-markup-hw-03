@@ -235,7 +235,7 @@ button {
 }
 
 .card-team {
-  padding: 32px 16px;
+  padding: 32px 0 32px;
 }
 
 .content-team {
@@ -290,6 +290,9 @@ button {
 
 .footer-logo .logo-part {
   color: #f4f4fd;
+}
+
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
